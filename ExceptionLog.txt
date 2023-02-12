@@ -1,0 +1,506 @@
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:53:12 pm
+Error Message: Activities information is currently not available(we didn't add it yet)
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:53:12 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:57:54 pm
+Error Message: Activities information is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:57:54 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:59:01 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:59:01 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:01:56 pm
+Error Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SomerenDAL.BaseDao.OpenConnection() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\BaseDao.cs:line 26
+===========End============= 11/03/2022 10:01:56 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:01:56 pm
+Error Message: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+Stack Trace:    at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.StudentDao.GetAllStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\StudentDao.cs:line 16
+   at SomerenLogic.StudentService.GetStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenLogic\StudentService.cs:line 23
+   at SomerenUI.SomerenUI.ReadListOfStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 87
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 45
+===========End============= 11/03/2022 10:01:56 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:39:52 pm
+Error Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SomerenDAL.BaseDao.OpenConnection() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\BaseDao.cs:line 26
+===========End============= 11/03/2022 10:39:52 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:39:52 pm
+Error Message: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+Stack Trace:    at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.StudentDao.GetAllStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\StudentDao.cs:line 15
+   at SomerenLogic.StudentService.GetStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenLogic\StudentService.cs:line 19
+   at SomerenUI.SomerenUI.ReadListOfStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenUI\SomerenUI.cs:line 87
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenUI\SomerenUI.cs:line 45
+===========End============= 11/03/2022 10:39:52 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:37:36 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 143
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 62
+===========End============= 15/03/2022 3:37:36 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:40:01 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 143
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 62
+===========End============= 15/03/2022 3:40:01 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:40:36 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 144
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 63
+===========End============= 15/03/2022 3:40:36 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 6:55:00 pm
+Error Message: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+Stack Trace:    at System.Windows.Forms.ImageList.Draw(Graphics g, Int32 x, Int32 y, Int32 width, Int32 height, Int32 index)
+   at System.Windows.Forms.ImageList.Draw(Graphics g, Point pt, Int32 index)
+   at SomerenUI.SomerenUI.ReadListOfDrinks() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 202
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 85
+===========End============= 15/03/2022 6:55:00 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 8:29:48 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 145
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 64
+===========End============= 15/03/2022 8:29:48 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 10:57:02 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 147
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 66
+===========End============= 15/03/2022 10:57:02 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 2:26:47 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 2:26:47 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:15:48 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:15:48 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:32:13 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:32:13 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:34:33 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:34:33 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 6:37:23 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 153
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 74
+===========End============= 16/03/2022 6:37:23 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:05:35 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:05:35 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:06:17 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:06:17 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:07:20 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:07:20 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:08:20 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:08:20 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:08:53 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:08:53 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:09:58 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:09:58 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:11:13 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:11:13 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:11:21 am
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:11:21 am
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:35:31 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:35:31 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 12:51:34 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 12:51:34 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 1:23:06 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 1:23:06 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 1:54:14 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 1:54:14 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 1:55:39 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 1:55:39 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 1:56:36 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 287
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 1:56:36 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:15:39 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 303
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:15:39 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:17:23 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 304
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:17:23 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:18:23 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 304
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:18:23 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:22:51 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 304
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:22:51 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:24:57 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 304
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:24:57 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:35:13 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 304
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:35:13 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:38:23 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 303
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:38:23 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 2:43:00 pm
+Error Message: Incorrect syntax near 'Activities'.
+Stack Trace:    at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.SupervisorDao.GetAllSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\SupervisorDao.cs:line 17
+   at SomerenLogic.SupervisorService.GetSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\SupervisorService.cs:line 18
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 303
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 2:43:00 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 3:25:33 pm
+Error Message: Column 'supervisorStatus' does not belong to table Table.
+Stack Trace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at SomerenDAL.TeachersDao.ReadTables(DataTable dataTable) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\TeachersDao.cs:line 28
+   at SomerenDAL.TeachersDao.GetNonSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenDAL\TeachersDao.cs:line 44
+   at SomerenLogic.TeacherService.GetNonSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenLogic\TeacherService.cs:line 24
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 290
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 3:25:34 pm
+=============Error Logging ===========
+===========Start============= 22/03/2022 8:11:07 pm
+Error Message: Method not found: 'System.Collections.Generic.List`1<SomerenModel.Supervisor> SomerenDAL.SupervisorDao.GetAllSupervisor()'.
+Stack Trace:    at SomerenLogic.SupervisorService.GetSupervisor()
+   at SomerenUI.SomerenUI.<ReadListOfSupervisor>g__DisplaySupervisorList|18_1() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 329
+   at SomerenUI.SomerenUI.ReadListOfSupervisor() in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 288
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Project Code\SomerenUI\SomerenUI.cs:line 107
+===========End============= 22/03/2022 8:11:08 pm
+=============Error Logging ===========
+===========Start============= 24/03/2022 7:39:32 pm
+Error Message: InvalidArgument=Value of 'Size.Empty' is not valid for 'ImageSize'.
+Stack Trace:    at System.Windows.Forms.ImageList.set_ImageSize(Size value)
+   at SomerenUI.SomerenUI.ReadListOfDrinks() in C:\Users\Hyunwoo\Desktop\Somoren_4.1-H\SomerenUI\SomerenUI.cs:line 231
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Somoren_4.1-H\SomerenUI\SomerenUI.cs:line 93
+===========End============= 24/03/2022 7:39:32 pm
+=============Error Logging ===========
+===========Start============= 25/03/2022 5:10:56 pm
+Error Message: There is no data between the selected date!
+Stack Trace:    at SomerenDAL.RevenueReportDao.ReadRevenue(DataTable dataTable) in C:\Users\Hyunwoo\Desktop\Someren_4.5\SomerenDAL\RevenueReportDao.cs:line 38
+   at SomerenDAL.RevenueReportDao.GetSalesAmount(DateTime dateFrom, DateTime dateTo) in C:\Users\Hyunwoo\Desktop\Someren_4.5\SomerenDAL\RevenueReportDao.cs:line 23
+   at SomerenLogic.RevenueReportService.GetSales(DateTime dateFrom, DateTime dateTo) in C:\Users\Hyunwoo\Desktop\Someren_4.5\SomerenLogic\RevenueReportService.cs:line 17
+   at SomerenUI.SomerenUI.btnGetReport_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_4.5\SomerenUI\SomerenUI.cs:line 603
+===========End============= 25/03/2022 5:10:56 pm
+=============Error Logging ===========
+===========Start============= 25/03/2022 17:36:41
+Error Message: There is no data between the selected date!
+Stack Trace:    at SomerenDAL.RevenueReportDao.ReadRevenue(DataTable dataTable) in C:\Users\bbd14\OneDrive\Inholland\1-3\Project\Someren_4.6\SomerenDAL\RevenueReportDao.cs:line 38
+   at SomerenDAL.RevenueReportDao.GetSalesAmount(DateTime dateFrom, DateTime dateTo) in C:\Users\bbd14\OneDrive\Inholland\1-3\Project\Someren_4.6\SomerenDAL\RevenueReportDao.cs:line 23
+   at SomerenLogic.RevenueReportService.GetSales(DateTime dateFrom, DateTime dateTo) in C:\Users\bbd14\OneDrive\Inholland\1-3\Project\Someren_4.6\SomerenLogic\RevenueReportService.cs:line 17
+   at SomerenUI.SomerenUI.btnGetReport_Click(Object sender, EventArgs e) in C:\Users\bbd14\OneDrive\Inholland\1-3\Project\Someren_4.6\SomerenUI\SomerenUI.cs:line 602
+===========End============= 25/03/2022 17:36:41
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:15:55 AM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_4.6\SomerenUI\SomerenUI.cs:line 636
+===========End============= 3/27/2022 10:15:55 AM
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:15:58 AM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_4.6\SomerenUI\SomerenUI.cs:line 636
+===========End============= 3/27/2022 10:15:58 AM
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:29:38 PM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_5.0\SomerenUI\SomerenUI.cs:line 638
+===========End============= 3/27/2022 10:29:38 PM
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:29:41 PM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_5.0\SomerenUI\SomerenUI.cs:line 638
+===========End============= 3/27/2022 10:29:41 PM
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:30:20 PM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_5.0\SomerenUI\SomerenUI.cs:line 639
+===========End============= 3/27/2022 10:30:20 PM
+=============Error Logging ===========
+===========Start============= 3/27/2022 10:31:21 PM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_5.0\SomerenUI\SomerenUI.cs:line 639
+===========End============= 3/27/2022 10:31:21 PM
+=============Error Logging ===========
+===========Start============= 3/30/2022 11:09:28 AM
+Error Message: There is no data between the selected date!
+Stack Trace:    at SomerenDAL.RevenueReportDao.ReadRevenue(DataTable dataTable) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenDAL\RevenueReportDao.cs:line 38
+   at SomerenDAL.RevenueReportDao.GetSalesAmount(DateTime dateFrom, DateTime dateTo) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenDAL\RevenueReportDao.cs:line 23
+   at SomerenLogic.RevenueReportService.GetSales(DateTime dateFrom, DateTime dateTo) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenLogic\RevenueReportService.cs:line 17
+   at SomerenUI.SomerenUI.btnGetReport_Click(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenUI\SomerenUI.cs:line 601
+===========End============= 3/30/2022 11:09:28 AM
+=============Error Logging ===========
+===========Start============= 3/30/2022 11:10:47 AM
+Error Message: There is no data between the selected date!
+Stack Trace:    at SomerenDAL.RevenueReportDao.ReadRevenue(DataTable dataTable) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenDAL\RevenueReportDao.cs:line 38
+   at SomerenDAL.RevenueReportDao.GetSalesAmount(DateTime dateFrom, DateTime dateTo) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenDAL\RevenueReportDao.cs:line 23
+   at SomerenLogic.RevenueReportService.GetSales(DateTime dateFrom, DateTime dateTo) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenLogic\RevenueReportService.cs:line 17
+   at SomerenUI.SomerenUI.btnGetReport_Click(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Somereren_5.2\SomerenUI\SomerenUI.cs:line 601
+===========End============= 3/30/2022 11:10:47 AM
+=============Error Logging ===========
+===========Start============= 3/31/2022 10:24:33 AM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\OneDrive\Masaüstü\Term-3\PROJECT Database\Assignments\Someren_5.4\SomerenUI\SomerenUI.cs:line 668
+===========End============= 3/31/2022 10:24:33 AM
+=============Error Logging ===========
+===========Start============= 4/1/2022 10:26:07 AM
+Error Message: Sorry, this account doesn't exist.
+Stack Trace:    at SomerenLogic.LoginService.GetSalt(String UserName) in C:\Users\turkv\Downloads\Someren_5.7\Someren_5.6\SomerenLogic\LoginService.cs:line 27
+   at SomerenUI.LoginMenu.btnLogin_Click(Object sender, EventArgs e) in C:\Users\turkv\Downloads\Someren_5.7\Someren_5.6\SomerenUI\LoginMenu.cs:line 30
+===========End============= 4/1/2022 10:26:07 AM
+=============Error Logging ===========
+===========Start============= 4/1/2022 10:36:29 AM
+Error Message: Sorry, this account doesn't exist.
+Stack Trace:    at SomerenLogic.LoginService.GetSalt(String UserName) in C:\Users\turkv\Downloads\Someren_5.8\Someren_5.8\SomerenLogic\LoginService.cs:line 27
+   at SomerenUI.LoginMenu.btnLogin_Click(Object sender, EventArgs e) in C:\Users\turkv\Downloads\Someren_5.8\Someren_5.8\SomerenUI\LoginMenu.cs:line 30
+===========End============= 4/1/2022 10:36:29 AM
+=============Error Logging ===========
+===========Start============= 4/1/2022 10:36:56 AM
+Error Message: String was not recognized as a valid DateTime.
+Stack Trace:    at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at SomerenUI.SomerenUI.listViewActivities_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\turkv\Downloads\Someren_5.8\Someren_5.8\SomerenUI\SomerenUI.cs:line 675
+===========End============= 4/1/2022 10:36:56 AM
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:21:08 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:21:08 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:21:12 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:21:12 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:21:19 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:21:19 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:21:22 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:21:22 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:24:07 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:24:07 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:24:15 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:24:15 pm
+=============Error Logging ===========
+===========Start============= 01/04/2022 1:24:18 pm
+Error Message: this username does not exist in the database
+Stack Trace:    at SomerenUI.ResetPassword.btnCheckUsername_Click(Object sender, EventArgs e) in C:\Users\Hyunwoo\Desktop\Someren_5.8\Someren_5.8\SomerenUI\ResetPassword.cs:line 32
+===========End============= 01/04/2022 1:24:18 pm

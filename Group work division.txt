@@ -1,0 +1,24 @@
+assignment2
+
+1. 684671 Hyunwoo Song -  student listview, panel, general UI design, handling excption and save the rog.
+2. 691136 Betül Beril Dündar -  teacher listview, modified Model layer to take different value types, managed sql server.
+3. 683343 Vedat Türk - rooms listview, managed github repasitory.
+
+
+assignment3
+
+1. 684671 Hyunwoo Song - drink supplements management
+2. 691136 Betül Beril Dündar - Cash register system
+3. 683343 Vedat Türk - Revernue Report
+
+assignment4
+
+1. 684671 Hyunwoo Song - Variant B: Activity Supervisors
+2. 691136 Betül Beril Dündar - Variant A: List of Activities
+3. 683343 Vedat Türk - Variant C: Activity Participants
+
+assignment5
+
+1. 684671 Hyunwoo Song - Variant C: Reset password form
+2. 691136 Betül Beril Dündar - Variant B: Registration Form
+3. 683343 Vedat Türk - Variant A: Login Form
